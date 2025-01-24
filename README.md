@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+# Toximark Web | Tennaxia x ESIEA [![My Skills](https://skillicons.dev/icons?i=react,supabase,js)](https://skillicons.dev)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-## Available Scripts
+Ce projet a été développé dans le cadre de la 8ᵉ édition de la Digital Consulting Week (DCW), un événement collaboratif organisé conjointement par l'ESIEA et SKEMA Business School (20 au 25 janvier 2025). Cet événement offre l'opportunité de développer des solutions innovantes en réponse aux défis actuels du secteur numérique.
 
-In the project directory, you can run:
+---
+## Objectif du projet 🎯 
 
-### `npm start`
+L'objectif de ce projet était de développer un prototype d'application permettant à un producteur de déchets et un transporteur d'effectuer sur smartphone une signature électronique manuscrite et géolocalisée, en réponse à la problématique posée par Tennaxia, partenaire de la performance durable des entreprises et des investisseurs depuis plus de 20 ans.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
+## Technologies utilisées 🛠️
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* **[React](https://reactjs.org/)** : Bibliothèque JavaScript pour la création d'interfaces utilisateur modernes et réactives
+  
+* **[Supabase](https://supabase.com/)** : Plateforme open-source offrant des services backend tels que l'authentification, la base de données et le stockage
+  
+* **[JavaScript](https://developer.mozilla.org/fr/docs/Web/JavaScript)** : Langage de programmation utilisé pour le développement frontend
 
-### `npm test`
+---
+## Fonctionnalités principales ✨
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Signature électronique manuscrite géolocalisée
+* Affichage des différents ramassages
+* Interface responsive adaptée aux appareils mobiles
+* Authentification sécurisée
+* Stockage des données en temps réel
 
-### `npm run build`
+---
+## Structure du Projet 🏗️
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Le projet suit une architecture modulaire basée sur les composants React :
+src/
+├── components/ # Composants réutilisables
+├── pages/ # Pages de l'application
+├── services/ # Services (API Supabase)
+├── hooks/ # Hooks personnalisés
+└── utils/ # Utilitaires et helpers
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
+## Démarrer l'application 🚀
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clonez le repository
+```
+git clone https://github.com/jcholet/toximark_web.git
+```
 
-### `npm run eject`
+2. Installez les dépendances :
+```
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Créez un fichier `.env` avec vos variables d'environnement :
+```
+REACT_APP_SUPABASE_URL=votre_url_supabase
+REACT_APP_SUPABASE_ANON_KEY=votre_clé_anon
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. Lancez l'application en mode développement :
+```
+npm start
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+L'application sera accessible à l'adresse [http://localhost:3000](http://localhost:3000)
 
-## Learn More
+---
+### Scripts disponibles
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* `npm start` : Lance l'application en mode développement
+* `npm test` : Lance les tests
+* `npm run build` : Crée une version de production
+* `npm run eject` : Permet d'éjecter la configuration CRA
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+_\*Toximark Web fonctionne sur tous les navigateurs modernes._
 
-### Code Splitting
+---
+## Licence 📄
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Ce projet est sous licence GPL v3. Voir le fichier LICENSE pour plus de détails.
